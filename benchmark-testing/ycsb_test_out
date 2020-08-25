@@ -1,0 +1,300 @@
+
+######
+workloada
+######
+
+***************** properties *****************
+"readproportion"="0.5"
+"mysql.port"="4000"
+"mysql.host"="172.31.58.100"
+"threadcount"="128"
+"scanproportion"="0"
+"dotransactions"="false"
+"readallfields"="true"
+"workload"="core"
+"insertproportion"="0"
+"requestdistribution"="uniform"
+"updateproportion"="0.5"
+"recordcount"="500000"
+"operationcount"="1000"
+**********************************************
+INSERT - Takes(s): 10.0, Count: 60016, OPS: 6006.3, Avg(us): 21188, Min(us): 1294, Max(us): 90614, 99th(us): 59000, 99.9th(us): 76000, 99.99th(us): 85000
+INSERT - Takes(s): 20.0, Count: 119177, OPS: 5961.2, Avg(us): 21385, Min(us): 1294, Max(us): 113023, 99th(us): 61000, 99.9th(us): 81000, 99.99th(us): 96000
+INSERT - Takes(s): 30.0, Count: 177882, OPS: 5931.0, Avg(us): 21506, Min(us): 1261, Max(us): 113023, 99th(us): 62000, 99.9th(us): 85000, 99.99th(us): 109000
+INSERT - Takes(s): 40.0, Count: 237183, OPS: 5930.8, Avg(us): 21503, Min(us): 1261, Max(us): 167247, 99th(us): 62000, 99.9th(us): 88000, 99.99th(us): 142000
+INSERT - Takes(s): 50.0, Count: 296296, OPS: 5926.9, Avg(us): 21530, Min(us): 1261, Max(us): 167247, 99th(us): 62000, 99.9th(us): 90000, 99.99th(us): 136000
+INSERT - Takes(s): 60.0, Count: 353905, OPS: 5899.2, Avg(us): 21635, Min(us): 885, Max(us): 167247, 99th(us): 62000, 99.9th(us): 92000, 99.99th(us): 132000
+INSERT - Takes(s): 70.0, Count: 415210, OPS: 5932.2, Avg(us): 21513, Min(us): 885, Max(us): 167247, 99th(us): 62000, 99.9th(us): 91000, 99.99th(us): 121000
+INSERT - Takes(s): 80.0, Count: 473034, OPS: 5913.5, Avg(us): 21587, Min(us): 885, Max(us): 167247, 99th(us): 62000, 99.9th(us): 93000, 99.99th(us): 132000
+INSERT - Takes(s): 90.0, Count: 499968, OPS: 5555.7, Avg(us): 21545, Min(us): 541, Max(us): 167247, 99th(us): 62000, 99.9th(us): 92000, 99.99th(us): 132000
+Run finished, takes 1m35.996364407s
+INSERT - Takes(s): 96.0, Count: 499968, OPS: 5208.6, Avg(us): 21545, Min(us): 541, Max(us): 167247, 99th(us): 62000, 99.9th(us): 92000, 99.99th(us): 132000
+***************** properties *****************
+"readallfields"="true"
+"dotransactions"="true"
+"threadcount"="128"
+"requestdistribution"="uniform"
+"readproportion"="0.5"
+"scanproportion"="0"
+"updateproportion"="0.5"
+"operationcount"="1000"
+"insertproportion"="0"
+"workload"="core"
+"mysql.host"="172.31.58.100"
+"mysql.port"="4000"
+"recordcount"="500000"
+**********************************************
+Run finished, takes 362.043883ms
+READ   - Takes(s): 0.3, Count: 467, OPS: 1558.1, Avg(us): 23545, Min(us): 751, Max(us): 71782, 99th(us): 68000, 99.9th(us): 72000, 99.99th(us): 72000
+UPDATE - Takes(s): 0.3, Count: 429, OPS: 1243.0, Avg(us): 61348, Min(us): 11723, Max(us): 152917, 99th(us): 135000, 99.9th(us): 153000, 99.99th(us): 153000
+
+######
+workloadb
+######
+
+***************** properties *****************
+"readproportion"="0.95"
+"mysql.host"="172.31.58.100"
+"updateproportion"="0.05"
+"operationcount"="1000"
+"requestdistribution"="uniform"
+"readallfields"="true"
+"dotransactions"="false"
+"threadcount"="128"
+"insertproportion"="0"
+"recordcount"="500000"
+"scanproportion"="0"
+"mysql.port"="4000"
+"workload"="core"
+**********************************************
+INSERT - Takes(s): 10.0, Count: 58136, OPS: 5818.7, Avg(us): 21828, Min(us): 1752, Max(us): 100587, 99th(us): 63000, 99.9th(us): 86000, 99.99th(us): 95000
+INSERT - Takes(s): 20.0, Count: 117920, OPS: 5898.6, Avg(us): 21597, Min(us): 1752, Max(us): 100587, 99th(us): 62000, 99.9th(us): 85000, 99.99th(us): 93000
+INSERT - Takes(s): 30.0, Count: 177281, OPS: 5911.1, Avg(us): 21558, Min(us): 1427, Max(us): 131814, 99th(us): 63000, 99.9th(us): 87000, 99.99th(us): 121000
+INSERT - Takes(s): 40.0, Count: 235439, OPS: 5887.3, Avg(us): 21663, Min(us): 1427, Max(us): 131814, 99th(us): 63000, 99.9th(us): 85000, 99.99th(us): 116000
+INSERT - Takes(s): 50.0, Count: 294901, OPS: 5899.0, Avg(us): 21628, Min(us): 1150, Max(us): 152104, 99th(us): 63000, 99.9th(us): 88000, 99.99th(us): 127000
+INSERT - Takes(s): 60.0, Count: 354865, OPS: 5915.3, Avg(us): 21572, Min(us): 1067, Max(us): 152104, 99th(us): 63000, 99.9th(us): 86000, 99.99th(us): 126000
+INSERT - Takes(s): 70.0, Count: 413410, OPS: 5906.6, Avg(us): 21606, Min(us): 941, Max(us): 152104, 99th(us): 63000, 99.9th(us): 86000, 99.99th(us): 125000
+INSERT - Takes(s): 80.0, Count: 472071, OPS: 5901.5, Avg(us): 21626, Min(us): 941, Max(us): 152104, 99th(us): 63000, 99.9th(us): 87000, 99.99th(us): 121000
+INSERT - Takes(s): 90.0, Count: 499968, OPS: 5555.7, Avg(us): 21565, Min(us): 484, Max(us): 152104, 99th(us): 63000, 99.9th(us): 86000, 99.99th(us): 121000
+Run finished, takes 1m35.896595841s
+INSERT - Takes(s): 95.9, Count: 499968, OPS: 5214.2, Avg(us): 21565, Min(us): 484, Max(us): 152104, 99th(us): 63000, 99.9th(us): 86000, 99.99th(us): 121000
+***************** properties *****************
+"operationcount"="1000"
+"dotransactions"="true"
+"threadcount"="128"
+"mysql.port"="4000"
+"workload"="core"
+"readallfields"="true"
+"mysql.host"="172.31.58.100"
+"recordcount"="500000"
+"requestdistribution"="uniform"
+"readproportion"="0.95"
+"updateproportion"="0.05"
+"scanproportion"="0"
+"insertproportion"="0"
+**********************************************
+Run finished, takes 292.683754ms
+READ   - Takes(s): 0.2, Count: 859, OPS: 3723.8, Avg(us): 31146, Min(us): 2014, Max(us): 107320, 99th(us): 87000, 99.9th(us): 108000, 99.99th(us): 108000
+UPDATE - Takes(s): 0.2, Count: 37, OPS: 182.8, Avg(us): 65201, Min(us): 11859, Max(us): 115022, 99th(us): 116000, 99.9th(us): 116000, 99.99th(us): 116000
+
+######
+workloadc
+######
+
+***************** properties *****************
+"recordcount"="500000"
+"operationcount"="1000"
+"mysql.host"="172.31.58.100"
+"threadcount"="128"
+"readproportion"="1"
+"updateproportion"="0"
+"insertproportion"="0"
+"dotransactions"="false"
+"workload"="core"
+"readallfields"="true"
+"requestdistribution"="uniform"
+"scanproportion"="0"
+"mysql.port"="4000"
+**********************************************
+INSERT - Takes(s): 10.0, Count: 59022, OPS: 5904.7, Avg(us): 21518, Min(us): 1829, Max(us): 140601, 99th(us): 61000, 99.9th(us): 87000, 99.99th(us): 132000
+INSERT - Takes(s): 20.0, Count: 118631, OPS: 5932.8, Avg(us): 21473, Min(us): 1424, Max(us): 140601, 99th(us): 61000, 99.9th(us): 83000, 99.99th(us): 112000
+INSERT - Takes(s): 30.0, Count: 177950, OPS: 5932.5, Avg(us): 21488, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 81000, 99.99th(us): 102000
+INSERT - Takes(s): 40.0, Count: 236911, OPS: 5923.4, Avg(us): 21536, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 85000, 99.99th(us): 126000
+INSERT - Takes(s): 50.0, Count: 296424, OPS: 5928.8, Avg(us): 21521, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 88000, 99.99th(us): 114000
+INSERT - Takes(s): 60.0, Count: 355674, OPS: 5928.3, Avg(us): 21521, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 86000, 99.99th(us): 112000
+INSERT - Takes(s): 70.0, Count: 415279, OPS: 5932.9, Avg(us): 21513, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 88000, 99.99th(us): 124000
+INSERT - Takes(s): 80.0, Count: 473861, OPS: 5923.6, Avg(us): 21548, Min(us): 878, Max(us): 140601, 99th(us): 61000, 99.9th(us): 89000, 99.99th(us): 120000
+INSERT - Takes(s): 90.0, Count: 499968, OPS: 5555.5, Avg(us): 21463, Min(us): 496, Max(us): 140601, 99th(us): 61000, 99.9th(us): 88000, 99.99th(us): 121000
+Run finished, takes 1m36.460749716s
+INSERT - Takes(s): 96.5, Count: 499968, OPS: 5183.4, Avg(us): 21463, Min(us): 496, Max(us): 140601, 99th(us): 61000, 99.9th(us): 88000, 99.99th(us): 121000
+***************** properties *****************
+"recordcount"="500000"
+"threadcount"="128"
+"readallfields"="true"
+"mysql.host"="172.31.58.100"
+"insertproportion"="0"
+"readproportion"="1"
+"scanproportion"="0"
+"requestdistribution"="uniform"
+"updateproportion"="0"
+"operationcount"="1000"
+"mysql.port"="4000"
+"dotransactions"="true"
+"workload"="core"
+**********************************************
+Run finished, takes 207.628233ms
+READ   - Takes(s): 0.1, Count: 896, OPS: 7273.1, Avg(us): 22830, Min(us): 2872, Max(us): 99976, 99th(us): 87000, 99.9th(us): 100000, 99.99th(us): 100000
+
+######
+workloadd
+######
+
+***************** properties *****************
+"mysql.host"="172.31.58.100"
+"dotransactions"="false"
+"insertproportion"="0.05"
+"scanproportion"="0"
+"requestdistribution"="latest"
+"operationcount"="1000"
+"workload"="core"
+"readallfields"="true"
+"mysql.port"="4000"
+"updateproportion"="0"
+"recordcount"="500000"
+"readproportion"="0.95"
+"threadcount"="128"
+**********************************************
+INSERT - Takes(s): 9.9, Count: 59684, OPS: 6026.1, Avg(us): 21290, Min(us): 654, Max(us): 113555, 99th(us): 62000, 99.9th(us): 84000, 99.99th(us): 110000
+INSERT - Takes(s): 19.9, Count: 120458, OPS: 6051.9, Avg(us): 21149, Min(us): 654, Max(us): 138625, 99th(us): 61000, 99.9th(us): 88000, 99.99th(us): 125000
+INSERT - Takes(s): 29.9, Count: 179875, OPS: 6015.0, Avg(us): 21275, Min(us): 654, Max(us): 138625, 99th(us): 62000, 99.9th(us): 91000, 99.99th(us): 121000
+INSERT - Takes(s): 39.9, Count: 239933, OPS: 6012.7, Avg(us): 21268, Min(us): 654, Max(us): 138625, 99th(us): 62000, 99.9th(us): 87000, 99.99th(us): 116000
+INSERT - Takes(s): 49.9, Count: 299136, OPS: 5994.2, Avg(us): 21328, Min(us): 654, Max(us): 138625, 99th(us): 62000, 99.9th(us): 90000, 99.99th(us): 117000
+INSERT - Takes(s): 59.9, Count: 358451, OPS: 5983.7, Avg(us): 21365, Min(us): 654, Max(us): 146780, 99th(us): 62000, 99.9th(us): 89000, 99.99th(us): 119000
+INSERT - Takes(s): 69.9, Count: 418869, OPS: 5992.0, Avg(us): 21329, Min(us): 654, Max(us): 146780, 99th(us): 62000, 99.9th(us): 86000, 99.99th(us): 117000
+INSERT - Takes(s): 79.9, Count: 478807, OPS: 5992.3, Avg(us): 21329, Min(us): 654, Max(us): 146780, 99th(us): 61000, 99.9th(us): 84000, 99.99th(us): 116000
+INSERT - Takes(s): 89.9, Count: 499968, OPS: 5561.1, Avg(us): 21295, Min(us): 572, Max(us): 146780, 99th(us): 61000, 99.9th(us): 84000, 99.99th(us): 116000
+Run finished, takes 1m35.439259942s
+INSERT - Takes(s): 95.3, Count: 499968, OPS: 5243.8, Avg(us): 21295, Min(us): 572, Max(us): 146780, 99th(us): 61000, 99.9th(us): 84000, 99.99th(us): 116000
+***************** properties *****************
+"workload"="core"
+"readproportion"="0.95"
+"threadcount"="128"
+"operationcount"="1000"
+"requestdistribution"="latest"
+"scanproportion"="0"
+"updateproportion"="0"
+"recordcount"="500000"
+"mysql.host"="172.31.58.100"
+"mysql.port"="4000"
+"dotransactions"="true"
+"insertproportion"="0.05"
+"readallfields"="true"
+**********************************************
+Run finished, takes 260.640756ms
+INSERT - Takes(s): 0.2, Count: 51, OPS: 215.3, Avg(us): 22959, Min(us): 1011, Max(us): 86831, 99th(us): 87000, 99.9th(us): 87000, 99.99th(us): 87000
+READ   - Takes(s): 0.2, Count: 845, OPS: 4136.0, Avg(us): 27809, Min(us): 717, Max(us): 96144, 99th(us): 85000, 99.9th(us): 97000, 99.99th(us): 97000
+
+######
+workloade
+######
+
+***************** properties *****************
+"recordcount"="500000"
+"requestdistribution"="uniform"
+"workload"="core"
+"dotransactions"="false"
+"mysql.host"="172.31.58.100"
+"threadcount"="128"
+"updateproportion"="0"
+"scanproportion"="0.95"
+"scanlengthdistribution"="uniform"
+"mysql.port"="4000"
+"readallfields"="true"
+"insertproportion"="0.05"
+"readproportion"="0"
+"operationcount"="1000"
+"maxscanlength"="1"
+**********************************************
+INSERT - Takes(s): 9.9, Count: 59403, OPS: 5979.1, Avg(us): 21409, Min(us): 755, Max(us): 78506, 99th(us): 61000, 99.9th(us): 72000, 99.99th(us): 77000
+INSERT - Takes(s): 19.9, Count: 117071, OPS: 5870.8, Avg(us): 21759, Min(us): 581, Max(us): 110970, 99th(us): 61000, 99.9th(us): 80000, 99.99th(us): 97000
+INSERT - Takes(s): 29.9, Count: 174569, OPS: 5831.6, Avg(us): 21912, Min(us): 581, Max(us): 144817, 99th(us): 63000, 99.9th(us): 91000, 99.99th(us): 135000
+INSERT - Takes(s): 39.9, Count: 232169, OPS: 5813.7, Avg(us): 21980, Min(us): 581, Max(us): 144817, 99th(us): 64000, 99.9th(us): 95000, 99.99th(us): 131000
+INSERT - Takes(s): 49.9, Count: 288730, OPS: 5782.1, Avg(us): 22096, Min(us): 581, Max(us): 144817, 99th(us): 64000, 99.9th(us): 96000, 99.99th(us): 128000
+INSERT - Takes(s): 59.9, Count: 346940, OPS: 5788.6, Avg(us): 22077, Min(us): 581, Max(us): 144817, 99th(us): 64000, 99.9th(us): 93000, 99.99th(us): 127000
+INSERT - Takes(s): 69.9, Count: 406038, OPS: 5805.9, Avg(us): 22009, Min(us): 581, Max(us): 144817, 99th(us): 63000, 99.9th(us): 91000, 99.99th(us): 125000
+INSERT - Takes(s): 79.9, Count: 465296, OPS: 5820.9, Avg(us): 21949, Min(us): 581, Max(us): 144817, 99th(us): 63000, 99.9th(us): 91000, 99.99th(us): 122000
+INSERT - Takes(s): 89.9, Count: 499968, OPS: 5559.2, Avg(us): 21993, Min(us): 503, Max(us): 144817, 99th(us): 64000, 99.9th(us): 91000, 99.99th(us): 122000
+Run finished, takes 1m39.018169563s
+INSERT - Takes(s): 99.0, Count: 499968, OPS: 5052.6, Avg(us): 21993, Min(us): 503, Max(us): 144817, 99th(us): 64000, 99.9th(us): 91000, 99.99th(us): 122000
+***************** properties *****************
+"scanproportion"="0.95"
+"mysql.port"="4000"
+"requestdistribution"="uniform"
+"workload"="core"
+"insertproportion"="0.05"
+"threadcount"="128"
+"readproportion"="0"
+"operationcount"="1000"
+"maxscanlength"="1"
+"mysql.host"="172.31.58.100"
+"scanlengthdistribution"="uniform"
+"dotransactions"="true"
+"recordcount"="500000"
+"readallfields"="true"
+"updateproportion"="0"
+**********************************************
+Run finished, takes 617.516385ms
+INSERT - Takes(s): 0.6, Count: 37, OPS: 60.7, Avg(us): 54570, Min(us): 8233, Max(us): 119995, 99th(us): 120000, 99.9th(us): 120000, 99.99th(us): 120000
+SCAN   - Takes(s): 0.5, Count: 859, OPS: 1577.3, Avg(us): 81233, Min(us): 3912, Max(us): 164625, 99th(us): 153000, 99.9th(us): 165000, 99.99th(us): 165000
+
+######
+workloadf
+######
+
+***************** properties *****************
+"scanproportion"="0"
+"readproportion"="0.5"
+"threadcount"="128"
+"readmodifywriteproportion"="0.5"
+"requestdistribution"="uniform"
+"mysql.host"="172.31.58.100"
+"recordcount"="500000"
+"dotransactions"="false"
+"updateproportion"="0"
+"insertproportion"="0"
+"operationcount"="1000"
+"readallfields"="true"
+"mysql.port"="4000"
+"workload"="core"
+**********************************************
+INSERT - Takes(s): 9.9, Count: 57600, OPS: 5817.7, Avg(us): 22069, Min(us): 1284, Max(us): 142080, 99th(us): 66000, 99.9th(us): 94000, 99.99th(us): 134000
+INSERT - Takes(s): 19.9, Count: 116396, OPS: 5848.8, Avg(us): 21895, Min(us): 515, Max(us): 142080, 99th(us): 65000, 99.9th(us): 91000, 99.99th(us): 122000
+INSERT - Takes(s): 29.9, Count: 175095, OPS: 5855.8, Avg(us): 21851, Min(us): 515, Max(us): 142080, 99th(us): 64000, 99.9th(us): 87000, 99.99th(us): 116000
+INSERT - Takes(s): 39.9, Count: 234256, OPS: 5870.9, Avg(us): 21779, Min(us): 515, Max(us): 142080, 99th(us): 63000, 99.9th(us): 89000, 99.99th(us): 120000
+INSERT - Takes(s): 49.9, Count: 291567, OPS: 5842.9, Avg(us): 21877, Min(us): 515, Max(us): 142080, 99th(us): 64000, 99.9th(us): 92000, 99.99th(us): 121000
+INSERT - Takes(s): 59.9, Count: 349341, OPS: 5832.0, Avg(us): 21922, Min(us): 515, Max(us): 142080, 99th(us): 64000, 99.9th(us): 91000, 99.99th(us): 119000
+INSERT - Takes(s): 69.9, Count: 405483, OPS: 5800.8, Avg(us): 22028, Min(us): 515, Max(us): 146729, 99th(us): 65000, 99.9th(us): 98000, 99.99th(us): 136000
+INSERT - Takes(s): 79.9, Count: 464543, OPS: 5814.0, Avg(us): 21983, Min(us): 515, Max(us): 146729, 99th(us): 65000, 99.9th(us): 95000, 99.99th(us): 136000
+INSERT - Takes(s): 89.9, Count: 499968, OPS: 5561.3, Avg(us): 21934, Min(us): 443, Max(us): 146729, 99th(us): 64000, 99.9th(us): 93000, 99.99th(us): 136000
+Run finished, takes 1m38.602865224s
+INSERT - Takes(s): 98.5, Count: 499968, OPS: 5075.6, Avg(us): 21934, Min(us): 443, Max(us): 146729, 99th(us): 64000, 99.9th(us): 93000, 99.99th(us): 136000
+***************** properties *****************
+"insertproportion"="0"
+"operationcount"="1000"
+"mysql.host"="172.31.58.100"
+"mysql.port"="4000"
+"scanproportion"="0"
+"requestdistribution"="uniform"
+"threadcount"="128"
+"readallfields"="true"
+"dotransactions"="true"
+"recordcount"="500000"
+"workload"="core"
+"readproportion"="0.5"
+"readmodifywriteproportion"="0.5"
+"updateproportion"="0"
+**********************************************
+Run finished, takes 465.856779ms
+READ   - Takes(s): 0.5, Count: 896, OPS: 1963.0, Avg(us): 28238, Min(us): 744, Max(us): 104815, 99th(us): 99000, 99.9th(us): 105000, 99.99th(us): 105000
+READ_MODIFY_WRITE - Takes(s): 0.3, Count: 445, OPS: 1411.1, Avg(us): 81118, Min(us): 8844, Max(us): 164560, 99th(us): 161000, 99.9th(us): 165000, 99.99th(us): 165000
+UPDATE - Takes(s): 0.3, Count: 445, OPS: 1410.8, Avg(us): 52478, Min(us): 7939, Max(us): 109471, 99th(us): 99000, 99.9th(us): 110000, 99.99th(us): 110000

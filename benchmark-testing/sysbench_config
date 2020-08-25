@@ -1,0 +1,6 @@
+mysql-host=172.31.58.100
+mysql-port=4000
+mysql-user=root
+mysql-db=sbtest
+report-interval=10
+
