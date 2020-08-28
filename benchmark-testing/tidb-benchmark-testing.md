@@ -29,7 +29,7 @@ server_configs:
 ## 测试
 ### sysbench测试
 本次共使用`sysbench`对`oltp_point_select`、`oltp_update_index`、`oltp_read_only`、`oltp_write_only`、
-`oltp_read_write`五种场景进行了测试, 每个场景又分别使用线程数8、16、32、64、128进行测试，测试输出可见[结果](./sysbench_test_out)，汇总情况如下：
+`oltp_read_write`五种场景进行了测试, 每个场景又分别使用线程数8、16、32、64、128进行测试，测试输出可见[结果](./sysbench/sysbench_test_out)，汇总情况如下：
 | type              | thread | qps      | p95    |
 |-------------------|--------|----------|--------|
 | oltp_point_select | 8      | 12653.13 | 1.25   |
@@ -58,16 +58,16 @@ server_configs:
 | oltp_read_write   | 64     | 4378.48  | 404.61 |
 | oltp_read_write   | 128    | 4306.47  | 759.88 |
 #### TiDB Query Summary中的qps与duration
-![](./sysbench_db_summary.png)
-#### TiKV Details面板中Cluster中各server的CPU以及QPS指标
-![](./sysbench_kv_cluster.png)
+![](./images/sysbench_db_summary.png)
+#### TiKVDetails面板中Cluster中各server的CPU以及QPS指标
+![](./images/sysbench_kv_cluster.png)
 #### TiKV Details面板中grpc的qps以及duration
-![](./sysbench_kv_grpc.png)
+![](./images/sysbench_kv_grpc.png)
 #### 结果分析
 TiKV的CPU使用率相对一般，可能可以适当提高线程池数量来优化。
 
 ### go-ycsb测试
-本次使用`go-ycsb`设置128个线程并发对`workloada`~`workloadf`进行了测试，测试具体输出可见[结果](./ycsb_test_out)，汇总情况如下：
+本次使用`go-ycsb`设置128个线程并发对`workloada`~`workloadf`进行了测试，测试具体输出可见[结果](./ycsb/ycsb_test_out)，汇总情况如下：
 | workload  | OP type           | OPS    | P99(us) |
 |-----------|-------------------|--------|---------|
 | workloada | INSERT            | 5208.6 | 62000   |
@@ -89,11 +89,11 @@ TiKV的CPU使用率相对一般，可能可以适当提高线程池数量来优�
 | workloadf | READ_MODIFY_WRITE | 1411.1 | 161000  |
 | workloadf | UPDATE            | 1410.8 | 99000   |
 #### TiDB Query Summary中的qps与duration
-![](./ycsb_db_smmary.png)
+![](./images/ycsb_db_smmary.png)
 #### TiKV Details面板中Cluster中各server的CPU以及QPS指标
-![](./ycsb_kv_cluster.png)
+![](./images/ycsb_kv_cluster.png)
 #### TiKV Details面板中grpc的qps以及duration
-![](./ycsb_kv_grpc.png)
+![](./images/ycsb_kv_grpc.png)
 #### 结果分析
 根据观察发现，TiKV上CPU和内存使用率都不是很高，但是memtable hit率基本处于20%附近，因此猜测性能瓶颈可能跟memtable过小有关。同时线程池可能过小。
 
@@ -151,11 +151,11 @@ PAYMENT_ERR - Takes(s): 0.0, Count: 29, TPM: 63440.3, Sum(ms): 8427, Avg(ms): 29
 STOCK_LEVEL - Takes(s): 119.1, Count: 933, TPM: 470.1, Sum(ms): 40982, Avg(ms): 43, 95th(ms): 96, 99th(ms): 128, 99.9th(ms): 512
 ```
 #### TiDB Query Summary中的qps与duration
-![](./tpcc_db_summary.png)
+![](./images/tpcc_db_summary.png)
 #### TiKV Details面板中Cluster中各server的CPU以及QPS指标
-![](./tpcc_kv_cluster.png)
+![](./images/tpcc_kv_cluster.png)
 #### TiKV Details面板中grpc的qps以及duration
-![](./tpcc_kv_grpc.png)
+![](./images/tpcc_kv_grpc.png)
 #### 结果分析
 总体来看，TiKV上CPU利用率都比较高，但是内存使用并不是非常充分，同时观察发现memtable hit率在任务开始时也达到80%左右，在后来才降低到50%左右，看上去更像CPU overhead。
 
